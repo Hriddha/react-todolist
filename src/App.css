@@ -1,0 +1,15 @@
+#todoBody{
+    width: 700px;
+    min-height: 630px;
+}
+
+
+body{
+    background: rgb(90,251,255);
+    background: linear-gradient(165deg, rgba(90,251,255,1) 0%, rgba(35,255,193,0.19940476190476186) 52%, rgba(52,255,239,0) 100%);
+    overflow: hidden;
+}
+
+#body-cont{
+    min-height: 690px;
+}
