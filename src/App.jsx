@@ -155,7 +155,7 @@ function App() {
   return (
     <>
       <Navbar h1 = {cHandler} h2 = {homeHandler} />
-      <div id="body-cont" className=' flex sm:justify-center sm:flex-col sm:items-center h-screen  '>
+      <div id="body-cont" className=' flex sm:justify-center sm:flex-col sm:items-center h-auto'>
         <div id='todoBody' className='border-2 border-sky-400 shadow-lg shadow-blue-300 rounded-xl sm:m-0 m-5 sm:h-auto 3xl:h-120'>
           <div className='title font-bold text-center m-8 sm:text-2xl  text-lg'>myToDo-Your One and Only ToDo Manager</div>
           <div className='todoAdd flex m-2 sm:flex-row flex-col items-center '>
