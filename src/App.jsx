@@ -170,9 +170,9 @@ function App() {
           <hr className='m-6 border-1 border-black border-dashed'/>
           {cState?cTasks.map((item, index)=>(
             
-            <div key={index} className='m-3 flex items-center justify-center border-2 border-sky-300 rounded-lg transition-all hover:shadow-2xl hover:shadow-cyan-400 hover:scale-95 cursor-pointer'>
-              <input name={item.id} onChange={checkBoxHandler} autoComplete='off' type="checkbox" checked={item.isDone}/>
-              <span className={item.isDone?"line-through":" "} >{item.content}</span>
+            <div key={index} className='m-3 flex border-2 border-sky-300 rounded-lg transition-all hover:shadow-2xl hover:shadow-cyan-400 hover:scale-95 cursor-pointer'>
+              <input className='h-8 relative left-10 my-0.5'  name={item.id} onChange={checkBoxHandler} autoComplete='off' type="checkbox" checked={item.isDone}/>
+              <span className={item.isDone?"line-through block m-auto":" "} >{item.content}</span>
 
             </div>
           )):todoArr.map((item, index)=>(
@@ -180,7 +180,7 @@ function App() {
             <div key={index} className='m-3 flex items-center justify-around border-2 border-sky-300 rounded-lg transition-all hover:shadow-2xl hover:shadow-cyan-400 hover:scale-95 cursor-pointer'>
               <input name={item.id} onChange={checkBoxHandler} type="checkbox" checked={item.isDone}/>
               <span className={item.isDone?"line-through":" "} >{item.content}</span>
-              <div className='btnBox flex justify-end  border-2 '>
+              <div className='btnBox flex justify-end'>
 
                 {item.id==updateId&&updateState?null:(<button ref={updateRef}  className= "m-1 bg-sky-400 rounded-lg " name={item.id} onClick={updateHandler}><ImRedo2 className='w-10 h-6'/>
                   </button>)}
