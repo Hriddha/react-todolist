@@ -170,8 +170,8 @@ function App() {
           <hr className='m-6 border-1 border-black border-dashed'/>
           {cState?cTasks.map((item, index)=>(
             
-            <div key={index} className='m-3 flex items-center justify-around border-2 border-sky-300 rounded-lg transition-all hover:shadow-2xl hover:shadow-cyan-400 hover:scale-95 cursor-pointer'>
-              <input name={item.id} onChange={checkBoxHandler} type="checkbox" checked={item.isDone}/>
+            <div key={index} className='m-3 flex items-center justify-center border-2 border-sky-300 rounded-lg transition-all hover:shadow-2xl hover:shadow-cyan-400 hover:scale-95 cursor-pointer'>
+              <input name={item.id} onChange={checkBoxHandler} autoComplete='off' type="checkbox" checked={item.isDone}/>
               <span className={item.isDone?"line-through":" "} >{item.content}</span>
 
             </div>
