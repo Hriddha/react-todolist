@@ -11,6 +11,7 @@ function App() {
 
   // const inputRef = useRef();
   
+  
   const savedItems = JSON.parse(localStorage.getItem("todoArr")); 
   const completedSavedItems = JSON.parse(localStorage.getItem("cTasks")); 
 
