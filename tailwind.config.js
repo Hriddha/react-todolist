@@ -10,7 +10,7 @@ export default {
         '3xl':'2560px'
       },
       height:{
-        '120':'1000px'
+        '120':'60dvh'
       }
     },
   },
